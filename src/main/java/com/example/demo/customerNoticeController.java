@@ -11,6 +11,8 @@ public class customerNoticeController {
     public String list(Model model) {
         model. addAttribute("test", "hello");
         return "customer/notice/list";
+        //return "customer.notice.list"; resource resolver
+
     }
     @RequestMapping("detail")
     public String detail() {
