@@ -10,8 +10,8 @@ public class customerNoticeController {
     @RequestMapping("list")
     public String list(Model model) {
         model. addAttribute("test", "hello");
-        return "customer/notice/list";
-        //return "customer.notice.list"; resource resolver
+        return "customer/notice/list"; //resource view resolver
+        //return "customer.notice.list"; tiles view resolver
 
     }
     @RequestMapping("detail")
